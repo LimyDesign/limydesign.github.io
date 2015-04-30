@@ -170,7 +170,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #e7f1f8;
-    font-family: 'Titillium Web';
+    font-family: 'Play';
 }
  
 a,a:visited,a:link {
@@ -183,7 +183,7 @@ a:hover,a:active {
 }
  
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Titillium Web';
+    font-family: 'Play';
     line-height: 1.313em;
 }
  
