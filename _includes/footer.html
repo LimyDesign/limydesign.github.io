@@ -1,0 +1,25 @@
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; {{ site.title }} 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        {% for network in site.social %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="tel:+79041326000">+7 (904) 132-60-00</a>
+                        </li>
+                        <li><a href="mailto:bespalov@arsen.pw">bespalov@arsen.pw</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
