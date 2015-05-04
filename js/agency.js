@@ -14,9 +14,6 @@ $(function() {
         event.preventDefault();
     });
     $('img.lazy').lazyload();
-    $('.portfolio-modal').on('shown.bs.modal', function() {
-        $('img.lazy').lazyload();
-    });
 });
 
 // Highlight the top nav as scrolling occurs
@@ -38,4 +35,5 @@ $('div.modal').on('show.bs.modal', function() {
 			$(modal).modal('hide');
 		}
 	}
+    $('img.lazy').lazyload();
 });
