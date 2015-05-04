@@ -13,7 +13,9 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-    $('img.lazy').lazyload();
+    $('img.lazy').lazyload({
+        skip_invisible : true
+    });
 });
 
 // Highlight the top nav as scrolling occurs
@@ -35,9 +37,4 @@ $('div.modal').on('show.bs.modal', function() {
 			$(modal).modal('hide');
 		}
 	}
-});
-
-$('div.modal').on('shown.bs.modal', function() {
-    var modal = $(this);
-    modal.find('img.lazy').lazyload();
 });
