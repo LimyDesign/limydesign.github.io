@@ -1,0 +1,15 @@
+---
+title: Limy Event
+subtitle: Разработка сайта
+layout: default
+modal-id: 35
+date: 2011-04-11
+img: limy.png
+thumbnail: limy-thumbnail.png
+alt: image-alt
+project-date: Апрель 2011
+client: ООО «Сибирь»
+category: Разработка сайта
+description: Специальному агентству Limy Event потребовался новый обновленный дизайн сайта. Новый сайт включал уникальный фон для каждой страницы. Сайт работал на CMS Joomla.
+
+---

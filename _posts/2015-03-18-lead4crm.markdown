@@ -1,0 +1,16 @@
+---
+title: Генератор лидов
+subtitle: Разработка сайта
+layout: default
+modal-id: 24
+date: 2015-03-18
+img: lead4crm.png
+thumbnail: lead4crm-thumbnail.png
+alt: image-alt
+project-date: Март 2015
+client: Lead4CRM
+category: Разработка сайта
+site: http://www.lead4crm.ru
+description: Для модуля позволяющего легко составить целую базу потенциальных клиентов необходим был сайт, на котором пользователь получал бы API ключ и вносил бы средства на лицевой счет, ну и также сайт должен предоставлять другую различную информацию касательно самого модуля для CRM. Весь сайт работает на Node.js.
+
+---

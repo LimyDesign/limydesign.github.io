@@ -1,0 +1,15 @@
+---
+title: Siberia PBX
+subtitle: Разработка сайта
+layout: default
+modal-id: 31
+date: 2008-09-04
+img: pbx.png
+thumbnail: pbx-thumbnail.png
+alt: image-alt
+project-date: Сентябрь 2008
+client: ООО «Сибирь»
+category: Разработка сайта
+description: Структурному подразделению компании «Сибирь», занимающейся разработкой, поддержкой и реализацией IP-АТС Siberia PBX потребовался полноценный сайт. Сайт работал на CMS Joomla.
+
+---

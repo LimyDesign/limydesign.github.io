@@ -1,0 +1,15 @@
+---
+title: Сибирь
+subtitle: Разработка заглушки
+layout: default
+modal-id: 29
+date: 2008-11-16
+img: sibirk.png
+thumbnail: sibirk-thumbnail.png
+alt: image-alt
+project-date: Ноябрь 2008
+client: ООО «Сибирь»
+category: Разработка заглушки
+description: Многопрофильной компании понадобился общий сайт на котором были бы указали на другие сайты подразделений компаний.
+
+---

@@ -1,0 +1,16 @@
+---
+title: Spadix
+subtitle: Разработка заглушки
+layout: default
+modal-id: 23
+date: 2009-10-27
+img: spadix.png
+thumbnail: spadix-thumbnail.png
+alt: image-alt
+project-date: Октябрь 2009
+client: Spadix LLC
+category: Разработка заглушки
+site: http://www.spadix.ru
+description: Компания занимается обильным множеством различных видов деятельности и для начала потребовалась страница заглушка, на которой были бы перечислены все действующие подразделения.
+
+---

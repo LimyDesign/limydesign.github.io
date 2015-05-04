@@ -1,0 +1,16 @@
+---
+title: ArkoShop
+subtitle: Доработка и обслуживание сайта
+layout: default
+modal-id: 11
+date: 2014-09-07
+img: arkoshop.png
+thumbnail: arkoshop-thumbnail.png
+alt: image-alt
+project-date: Сентябрь 2014
+client: ООО «Плантфарм»
+category: Доработка и обслуживание сайта
+site: http://www.arkoshop.ru
+description: Задачей доработки встало сделать баннер с ротацией изображений, а также добавить систему определяющую географическое положение посетителя сайта с возможностью предлагать ему местный Интернет-магазин, чтобы упрощать заказы.
+
+---

@@ -1,0 +1,16 @@
+---
+title: Arsen Bespalov
+subtitle: Разработка лэндинга
+layout: default
+modal-id: 12
+date: 2013-03-25
+img: arsen.png
+thumbnail: arsen-thumbnail.png
+alt: image-alt
+project-date: Март 2013
+client: Арсен Беспалов
+category: Разработка лэндинга
+site: http://www.arsen.pw
+description: Не сайт, а чтобы просто указатель куда сходить, чтобы стало понятно, кто это и чем в целом занимается. И да, сейчас уже без резюме.
+
+---
