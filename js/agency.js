@@ -27,12 +27,14 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $('div.modal').on('show.bs.modal', function() {
-	var modal = this;
-	var hash = modal.id;
+	var modal = $(this);
+    var img = modal.data('original');
+	var hash = this.id;
+    modal.find('img.lazy').attr('src', img);
 	window.location.hash = hash;
 	window.onhashchange = function() {
 		if (!location.hash){
-			$(modal).modal('hide');
+			$(this).modal('hide');
 		}
 	}
 });
