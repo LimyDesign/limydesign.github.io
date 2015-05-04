@@ -30,7 +30,7 @@ $('div.modal').on('show.bs.modal', function() {
 	var modal = $(this);
     var img = modal.data('original');
 	var hash = this.id;
-    modal.find('img.lazy').attr('src', img);
+    modal.find('img.lazymodal').attr('src', img);
 	window.location.hash = hash;
 	window.onhashchange = function() {
 		if (!location.hash){
