@@ -35,5 +35,5 @@ $('div.modal').on('show.bs.modal', function() {
 			$(modal).modal('hide');
 		}
 	}
-    $('img.lazy').lazyload();
+    modal.find('img.lazy').lazyload();
 });
