@@ -13,7 +13,7 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-    $('img.lazy').lazyload({
+    $('img.lazy').show().lazyload({
         skip_invisible : true
     });
 });
