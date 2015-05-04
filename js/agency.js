@@ -28,7 +28,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 $('div.modal').on('show.bs.modal', function() {
 	var modal = $(this);
-    var img = modal.data('original');
+    var img = modal.find('img.lazymodal').data('original');
 	var hash = this.id;
     modal.find('img.lazymodal').attr('src', img);
 	window.location.hash = hash;
