@@ -26,6 +26,11 @@
                                 <li>Услуга:
                                     <strong>{{ post.category }}</strong>
                                 </li>
+                                {% if post.site %}
+                                <li>Сайт:
+                                    <strong><a href="{{ post.site }}" target="_blank">{{ post.site }}</a></strong>
+                                </li>
+                                {% endif %}
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть</button>
                         </div>
