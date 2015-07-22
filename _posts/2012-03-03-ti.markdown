@@ -10,7 +10,7 @@ alt: image-alt
 project-date: Март 2012
 client: Магазин теплиц и сотового поликарбоната «АБРИКОС»
 category: Разработка сайта
-site: http://www.teplizy-irkutska.ru
+site: http://old.teplizy-irkutska.ru
 description: Необходимо было разработать сайт для магазина теплиц и сотового поликарбоната, а также для другой различной продукции, предлагаемой магазинов. Сайт реализован на CMS Joomla.
 
 ---
