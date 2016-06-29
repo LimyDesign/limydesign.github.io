@@ -11,7 +11,7 @@
     <meta itemprop="image" content="{% if page.thumbnail %}{{ page.thumbnail }}{% else %}/img/thumbnail.png{% endif %}">
 
     <!-- Facebook -->
-    <meta property="og:image" content="{% if page.thumbnail %}https://limydesign.ru/img/portfolio/{{ page.thumbnail }}{% else %}https://limydesign.ru/img/thumbnail.png{% endif %}">
+    <meta property="og:image" content="{% if page.thumbnail %}https://limydesign.ru/img/portfolio/{{ page.img }}{% else %}https://limydesign.ru/img/thumbnail.png{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
