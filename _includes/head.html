@@ -3,7 +3,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Google Maps -->
+    <meta property="place:location:latitude" content="52.344838">
+    <meta property="place:location:longitude" content="104.224624">
+    <meta property="business:contact_data:street_address" content="Жукова, 2">
+    <meta property="business:contact_data:locality" content="Иркутск">
+    <meta property="business:contact_data:postal_code" content="664002">
+    <meta property="business:contact_data:country_name" content="Россия">
+    <meta property="business:contact_data:email" content="hello@limydesign.ru">
+    <meta property="business:contact_data:phone_number" content="+7 3952969614">
+
+    <!-- Google Plus -->
+    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta itemprop="image" content="{% if page.thumbnail %}{{ page.thumbnail }}{% else %}/img/thumbnail.png{% endif %}">
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
