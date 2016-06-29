@@ -1,25 +1,35 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Иркутск, ул. Жукова, 2-4</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="tel:+79041326000">+7 (904) 132-60-00</a>
-                        </li>
-                        <li><a href="mailto:bespalov@arsen.pw">bespalov@arsen.pw</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer id="footer">
+    <section>
+        <h2>Сотрудничество</h2>
+        <p>Мы с удовольствием работаем с любыми инициативными компаниями, которые хотят партнерских отношений с нашей студией. Заполняйте форму заявки и мы с вами обсудим форму сотрудничества.</p>
+        <ul class="actions">
+            <li><a href="mailto:hello@limydesign.ru" class="button icon fa-envelope">Сделать предложение</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Контакты</h2>
+        <dl class="alt">
+            <dt>Адрес</dt>
+            <dd>664002 &bull; Россия &bull; г. Иркутск, ул. Жукова, 2-4</dd>
+            <dt>Телефон</dt>
+            <dd>+7 (3952) 96-96-17</dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@limydesign.ru">hello@limydesign.ru</a></dd>
+        </dl>
+        <ul class="icons">
+            {% for network in site.social %}
+            <li>
+                <a href="{{ network.url }}" class="icon fa-{{ network.icon }} alt">
+                    <span class="label">{{ network.title }}</span>
+                </a>
+            </li>
+            {% endfor %}
+            <li>
+                <a href="/feed.xml" class="icon fa-rss alt">
+                    <span class="label">RSS</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <p class="copyright">2002 &mdash; 2016 &copy; LimyDesign Studio</p>
+</footer>

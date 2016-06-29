@@ -1,0 +1,41 @@
+---
+layout: default
+title: Мы это сделали
+menu: Портфолио
+description: Каждый проект мы выполняем с любовью и маниакальной педантичностью
+weight: 200
+---
+{% for p in site.posts limit: 5 %}
+<section class="main preview">
+    <div class="portfolio">
+        <div class="content">
+            <header class="major">
+                <h2>{{ p.title }}</h2>
+            </header>
+            <p>{{ p.description }}</p>
+            <p>
+                <strong>Заказчик:</strong> {{ p.client }}<br>
+                <strong>Тип работ:</strong> {{ p.type }}<br>
+                <strong>CMS:</strong> {% if p.cms_site %}<a href="{{ p.cms_site }}" target="_blank">{{ p.cms }}</a>{% else %}{{ p.cms }}{% endif %}<br>
+                <strong>Дата реализации:</strong> {{ p.project-date }}
+            </p>
+            <ul class="actions">
+                <li><a href="{{ p.url }}" class="button">Подробнее</a></li>
+                {% if p.site %}<li><a href="{{ p.site }}" class="button special">Открыть сайт</a></li>{% endif %}
+            </ul>
+        </div>
+        <span class="image"><img src="/img/portfolio/{{ p.thumbnail }}" alt="1С-Битрикс"></span>
+    </div>
+</section>
+{% endfor %}
+<section class="main special" id="infinite-spinner">
+    <footer class="major">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </footer>
+</section>

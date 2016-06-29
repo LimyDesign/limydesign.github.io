@@ -6,59 +6,23 @@ title: LimyDesign Studio
 email: me@arsen.pw
 description: "Мы делаем качественные сайты. Ознакомьтесь с нашими работами и нашими ценами. Мы предлагаем отличное сочетание цена-качество."
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: f79e08
-  secondary: c67e06  
-  secondary-dark: 222
-
-# Team names, titles and social links
-people:
-- name: Арсен Беспалов
-  pic: 1
-  position: Ведущий разработчик
-  social:
-    - title: vk
-      url: https://vk.com/bespaloff_prodction
-    - title: facebook
-      url: https://www.facebook.com/arsen.bespalov
-    - title: twitter
-      url: https://twitter.com/ArsenBespalov
-
-- name: Александр Семенов
-  pic: 2
-  position: Специалист по БД
-  social:
-    - title: vk
-      url: https://vk.com/semen337
-    - title: facebook
-      url: https://www.facebook.com/alexandr.semenov.144
-    - title: google-plus
-      url: https://plus.google.com/113183139641358898068/posts
-
-- name: Динара Беспалова
-  pic: 3
-  position: Копирайтер 
-  social:
-    - title: vk
-      url: https://vk.com/dinara.bespalova
-    - title: facebook
-      url: https://www.facebook.com/dinara.bespalova
-    - title: google-plus
-      url: https://plus.google.com/116228674288998840132/posts
-
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: https://twitter.com/ArsenBespalov
-  - title: github
+  - title: Telegram
+    icon: paper-plane
+    url: https://telegram.me/limydesign_bot
+  - title: Вконтакте
+    icon: vk
+    url: http://vk.com/limydesign
+  - title: Facebook
+    icon: facebook
+    url: https://www.facebook.com/LimyDesign-Studio-1761607140723001/
+  - title: Github
+    icon: github
     url: https://github.com/LimyDesign
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+sass:
+  sass_dir: _sass

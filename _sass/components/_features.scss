@@ -1,0 +1,112 @@
+///
+/// Stellar by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Features */
+
+	.features {
+      @include vendor('display', 'flex');
+      @include vendor('flex-wrap', 'wrap');
+      @include vendor('justify-content', 'center');
+      width: calc(100% + #{_size(element-margin)});
+      margin: 0 0 (_size(element-margin) * 1.5) (_size(element-margin) * -1);
+      padding: 0;
+      list-style: none;
+
+      li {
+        width: calc(#{(100% / 3)} - #{_size(element-margin)});
+        margin-left: _size(element-margin);
+        margin-top: (_size(element-margin) * 1.5);
+        padding: 0;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-top: 0;
+        }
+
+        > :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include breakpoint(medium) {
+        li {
+          width: calc(#{(100% / 2)} - #{_size(element-margin)});
+
+          &:nth-child(3) {
+            margin-top: (_size(element-margin) * 1.5);
+          }
+        }
+      }
+
+      @include breakpoint(small) {
+        width: 100%;
+        margin: 0 0 _size(element-margin) 0;
+
+        li {
+          width: 100%;
+          margin-left: 0;
+          margin-top: _size(element-margin);
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-top: _size(element-margin);
+          }
+        }
+      }
+    }
+
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+  > div {
+    background-color: _palette(accent1);
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+    background-color: _palette(accent2);
+  }
+  .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+    background-color: _palette(accent3);
+  }
+  .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    background-color: _palette(accent4);
+  }
+  .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+    background-color: _palette(accent5);
+  }
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+       transform: scaleY(1.0);
+       -webkit-transform: scaleY(1.0);
+     }
+}

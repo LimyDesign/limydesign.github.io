@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+<div id="wrapper">
+    {% include header.html %}
+    {% include nav.html %}
+
+    <div id="main">
+        <section class="main">
+            <span class="image main" style="background-image: url(/img/portfolio/{{ page.img }}); background-repeat: no-repeat;background-attachment: fixed; background-size: cover;"></span>
+            {{ content }}
+            <div class="table-wrapper">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Заказчик:</td>
+                        <td>{{ page.client }}</td>
+                    </tr>
+                    <tr>
+                        <td>Тип работ:</td>
+                        <td>{{ page.type }}</td>
+                    </tr>
+                    <tr>
+                        <td>CMS:</td>
+                        <td>{% if page.cms_site %}<a href="{{ page.cms_site }}" target="_blank">{{ page.cms }}</a>{%
+                            else %}{{ page.cms }}{% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Дата реализации:</td>
+                        <td>{{ page.project-date }}</td>
+                    </tr>
+                    {% if page.site %}
+                    <tr>
+                        <td>Сайт:</td>
+                        <td><a href="{{ page.site }}">{{ page.site }}</a></td>
+                    </tr>
+                    {% endif %}
+                    </tbody>
+                </table>
+            </div>
+            <ul class="actions fit">
+                {% if page.previous.url %}
+                <li><a href="{{ page.previous.url }}" class="button fit">&larr; {{ page.previous.title }}</a></li>
+                {% endif %}
+                {% if page.next.url %}
+                <li><a href="{{ page.next.url }}" class="button fit">{{ page.next.title }} &rarr;</a></li>
+                {% endif %}
+            </ul>
+        </section>
+        <div style="display: none;">
+            <section class="main preview">
+                <div class="portfolio">
+                    <div class="content">
+                        <header class="major">
+                            <h2>{{ page.title }}</h2>
+                        </header>
+                        <p>{{ page.description }}</p>
+                        <p>
+                            <strong>Заказчик:</strong> {{ page.client }}<br>
+                            <strong>Тип работ:</strong> {{ page.type }}<br>
+                            <strong>CMS:</strong> {% if page.cms_site %}<a href="{{ page.cms_site }}" target="_blank">{{ page.cms }}</a>{% else %}{{ page.cms }}{% endif %}<br>
+                            <strong>Дата реализации:</strong> {{ page.project-date }}
+                        </p>
+                        <ul class="actions">
+                            <li><a href="{{ page.url }}" class="button">Подробнее</a></li>
+                            {% if page.site %}<li><a href="{{ page.site }}" class="button special">Открыть сайт</a></li>{% endif %}
+                        </ul>
+                    </div>
+                    <span class="image"><img src="/img/portfolio/{{ page.thumbnail }}" alt="1С-Битрикс"></span>
+                </div>
+            </section>
+        </div>
+    </div>
+    {% include footer.html %}
+</div>
+{% include js.html %}
+</body>
+</html>

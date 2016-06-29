@@ -1,0 +1,16 @@
+<nav id="nav">
+    <ul>
+        {% assign pages = site.pages | sort:"weight"  %}
+        {% for p in pages %}
+        {% capture page_layout %}/{{ page.layout }}/{% endcapture %}
+        {% if page.url == p.url %}
+            {% assign active = 'class="active"' %}
+        {% elsif p.url == page_layout %}
+            {% assign active = 'class="active"' %}
+        {% else %}
+            {% assign active = '' %}
+        {% endif %}
+        <li><a href="{{ p.url }}" {{ active }}>{{ p.menu }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>

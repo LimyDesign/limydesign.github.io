@@ -1,20 +1,94 @@
 ---
-layout: default
+layout: home
+title:
+menu: Главная
+description: Творческая микро-студия креативных разработок.
+weight: 100
 ---
 
-<div class="home">
+<section id="intro" class="main">
+    <div class="spotlight">
+        <div class="content">
+            <header class="major">
+                <h2>Готовые решения для 1С-Битрикс</h2>
+            </header>
+            <p>Хотите отличный сайт с профессиональным дизайном, но быстро и дёшево? Это не просто байки &ndash; это реально, покупая готовое решение вы экономите деньги на дизайне, экономите время на разработке дизайна. Готовое решение для 1С-Битрикс — это действительно золотая середина.</p>
+            <ul class="actions">
+                <li><a href="http://marketplace.1c-bitrix.ru/partners/detail.php?ID=1074777.php" class="button">Наши готовые решения</a></li>
+            </ul>
+        </div>
+        <span class="image"><img src="/img/bitrix.jpg" alt="1С-Битрикс"></span>
+    </div>
+</section>
 
-  <h1>Posts</h1>
+<section id="first" class="main special">
+    <header class="major">
+        <h2>Преимущества работы с нами</h2>
+    </header>
+    <ul class="features">
+        <li>
+            <span class="icon major style1 fa-code"></span>
+            <h3>Простота в использовании</h3>
+            <p>Все наши решения очень простые в использовании, не требующие специальных особенных знаний в HTML, CSS или JS.</p>
+        </li>
+        <li>
+            <span class="icon major style3 fa-rocket"></span>
+            <h3>Быстрый запуск</h3>
+            <p>Запуск сайта можно осуществить даже на 1 день, самое длительное, при наличии всех материалов — 2 недели. Поможем, если что.</p>
+        </li>
+        <li>
+            <span class="icon major style5 fa-support"></span>
+            <h3>Поддержка клиентов</h3>
+            <p>В течении всего оплаченного времени (1 год минимум) поддержки мы осуществляем поддержку по всем нашим продуктам.</p>
+        </li>
+    </ul>
+    <footer class="major">
+        <ul class="actions">
+            <li><a href="/about-us/" class="button">Всё о нас и про нас</a></li>
+        </ul>
+    </footer>
+</section>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<section id="second" class="main special">
+    <header class="major">
+        <h2>Наша статистика</h2>
+        <p>Иногда громкие слова и красивые предложения не говорят ни о чем, по сравнению с суровыми статистическими данными. Для большего понимания о том, сколько мы сделали и сколько мы еще сделаем предлагаем ознакомиться с небольшой статистикой.</p>
+    </header>
+    <ul class="statistics">
+        <li class="style1">
+            <span class="icon fa-code-fork"></span>
+            <strong>38</strong> реализованных<br>проектов
+        </li>
+        <li class="style2">
+            <span class="icon fa-folder-open-o"></span>
+            <strong>13</strong> обслуживаемых<br>проекта
+        </li>
+        <li class="style3">
+            <span class="icon fa-signal"></span>
+            <strong>3</strong> собственных<br>проекта
+        </li>
+        <li class="style4">
+            <span class="icon fa-laptop"></span>
+            <strong>5</strong> обслуживаемых<br>серверов
+        </li>
+    </ul>
+    <p class="content">Это совершенно скромная статистика, в которую не вошли те проекты, которые даже не попали в наше портфолио, в связи с тем, что у нас даже не осталось исходников этих проектов, а их еще в далеком 2008 году насчитывалось на порядок больше. Если вам интересно углубиться в историю и попытаться проникнуться нашей писаниной, то мы готовы её поделиться. Однако это не самая интересная и увлекательная история, которую можно почитать на досуге.</p>
+    <footer class="major">
+        <ul class="actions">
+            <li><a href="/history/" class="button">История студии</a></li>
+        </ul>
+    </footer>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section id="cta" class="main special">
+    <header class="major">
+        <h2>Решились, но есть вопросы?</h2>
+        <p>Вам уже не терпится заказать проект под свой бизнес?<br>Заполните заявку и мы с вами свяжемся моментально.</p>
+    </header>
+    <footer class="major">
+        <ul class="actions">
+            <li><a href="https://limydesign.bitrix24.ru/pub/form/2_zayavka_na_razrabotku_resheniya/aigpuw/" class="button special">Заполнить заявку</a></li>
+            <li><a href="http://marketplace.1c-bitrix.ru/partners/detail.php?ID=1074777.php" class="button">Маркетплейс</a></li>
+        </ul>
+    </footer>
+</section>
